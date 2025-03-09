@@ -1,7 +1,13 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: f6sny-legacy
+---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: f6sny-api-v3
+  namespace: f6sny-legacy
 spec:
   replicas: 1
   selector:
@@ -46,6 +52,7 @@ apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:
   name: f6sny-api-v3-secrets
+  namespace: f6sny-legacy
 spec:
   refreshInterval: "15m"
   secretStoreRef:
@@ -128,6 +135,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: f6sny-api-v3-ingress
+  namespace: f6sny-legacy
   annotations:
     cert-manager.io/cluster-issuer: http01-clusterissuer
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
@@ -154,6 +162,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: f6sny-api-v3
+  namespace: f6sny-legacy
 spec:
   selector:
     app: f6sny-api-v3
@@ -168,6 +177,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: f6sny-nuxt-frontend
+  namespace: f6sny-legacy
 spec:
   replicas: 1
   selector:
@@ -216,6 +226,7 @@ apiVersion: external-secrets.io/v1beta1
 kind: ExternalSecret
 metadata:
   name: f6sny-nuxt-frontend-secrets
+  namespace: f6sny-legacy
 spec:
   refreshInterval: "15m"
   secretStoreRef:
@@ -298,6 +309,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: f6sny-nuxt-frontend-ingress
+  namespace: f6sny-legacy
   annotations:
     cert-manager.io/cluster-issuer: http01-clusterissuer
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
@@ -324,6 +336,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: f6sny-nuxt-frontend
+  namespace: f6sny-legacy
 spec:
   selector:
     app: f6sny-nuxt-frontend
