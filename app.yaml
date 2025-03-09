@@ -37,14 +37,20 @@ spec:
             cpu: "500m"
         readinessProbe:
           httpGet:
-            path: /_health
+            path: /
             port: 1337
+            httpHeaders:
+            - name: X-HTTP-Method-Override
+              value: HEAD
           initialDelaySeconds: 30
           periodSeconds: 10
         livenessProbe:
           httpGet:
-            path: /_health
+            path: /
             port: 1337
+            httpHeaders:
+            - name: X-HTTP-Method-Override
+              value: HEAD
           initialDelaySeconds: 60
           periodSeconds: 20
 ---
@@ -209,6 +215,9 @@ spec:
           httpGet:
             path: /
             port: 3000
+            httpHeaders:
+            - name: X-HTTP-Method-Override
+              value: HEAD
           initialDelaySeconds: 60
           periodSeconds: 10
           timeoutSeconds: 5
@@ -217,6 +226,9 @@ spec:
           httpGet:
             path: /
             port: 3000
+            httpHeaders:
+            - name: X-HTTP-Method-Override
+              value: HEAD
           initialDelaySeconds: 90
           periodSeconds: 20
           timeoutSeconds: 5
