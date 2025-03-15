@@ -194,7 +194,7 @@ spec:
       - name: f6sny-nuxt-frontend
         image: ghcr.io/f6sny/www.f6sny.com@sha256:088d3ec47416b05c099abe1ab3d3523d78e477eb30da6881d61566c8fee05125
         ports:
-          - containerPort: 3000
+          - containerPort: 5050
         envFrom:
           - secretRef:
               name: f6sny-nuxt-frontend-secrets
@@ -208,7 +208,7 @@ spec:
         readinessProbe:
           httpGet:
             path: /
-            port: 3000
+            port: 5050
           initialDelaySeconds: 60
           periodSeconds: 10
           timeoutSeconds: 5
@@ -216,7 +216,7 @@ spec:
         livenessProbe:
           httpGet:
             path: /
-            port: 3000
+            port: 5050
           initialDelaySeconds: 90
           periodSeconds: 20
           timeoutSeconds: 5
@@ -330,7 +330,7 @@ spec:
             service:
               name: f6sny-nuxt-frontend
               port:
-                number: 3000
+                number: 5050
 ---
 apiVersion: v1
 kind: Service
@@ -342,7 +342,7 @@ spec:
     app: f6sny-nuxt-frontend
     component: frontend
   ports:
-    - port: 3000
-      targetPort: 3000
+    - port: 5050
+      targetPort: 5050
       protocol: TCP
-  type: ClusterIP 
+  type: ClusterIP
