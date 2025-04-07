@@ -64,71 +64,71 @@ spec:
   data:
     - secretKey: ADMIN_JWT_SECRET
       remoteRef:
-        key: f6sny_legacy 
+        key: f6sny/env-vars-legacy 
         property: ADMIN_JWT_SECRET
     - secretKey: API_AUTH_URL
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: API_AUTH_URL
     - secretKey: API_URL
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: API_URL
     - secretKey: DATABASE_HOST
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_HOST
     - secretKey: DATABASE_NAME
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_NAME
     - secretKey: DATABASE_PASSWORD
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_PASSWORD
     - secretKey: DATABASE_PORT
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_PORT
     - secretKey: DATABASE_SSL
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_SSL
     - secretKey: DATABASE_USERNAME
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_USERNAME
     - secretKey: HOST
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: HOST
     - secretKey: MEILI_MASTER_KEY
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: MEILI_MASTER_KEY
     - secretKey: NODE_ENV
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: NODE_ENV
     - secretKey: NUXT_HOST
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: NUXT_HOST
     - secretKey: NUXT_PORT
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: NUXT_PORT
     - secretKey: PORT
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: PORT
     - secretKey: PUBLIC_URL
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: PUBLIC_URL
     - secretKey: URL
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: URL
 ---
 apiVersion: networking.k8s.io/v1
@@ -238,71 +238,71 @@ spec:
   data:
     - secretKey: ADMIN_JWT_SECRET
       remoteRef:
-        key: f6sny_legacy 
+        key: f6sny/env-vars-legacy 
         property: ADMIN_JWT_SECRET
     - secretKey: API_AUTH_URL
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: API_AUTH_URL
     - secretKey: API_URL
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: API_URL
     - secretKey: DATABASE_HOST
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_HOST
     - secretKey: DATABASE_NAME
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_NAME
     - secretKey: DATABASE_PASSWORD
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_PASSWORD
     - secretKey: DATABASE_PORT
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_PORT
     - secretKey: DATABASE_SSL
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_SSL
     - secretKey: DATABASE_USERNAME
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: DATABASE_USERNAME
     - secretKey: HOST
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: HOST
     - secretKey: MEILI_MASTER_KEY
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: MEILI_MASTER_KEY
     - secretKey: NODE_ENV
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: NODE_ENV
     - secretKey: NUXT_HOST
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: NUXT_HOST
     - secretKey: NUXT_PORT
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: NUXT_PORT
     - secretKey: PORT
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: PORT
     - secretKey: PUBLIC_URL
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: PUBLIC_URL
     - secretKey: URL
       remoteRef:
-        key: f6sny_legacy
+        key: f6sny/env-vars-legacy
         property: URL
 ---
 apiVersion: networking.k8s.io/v1
